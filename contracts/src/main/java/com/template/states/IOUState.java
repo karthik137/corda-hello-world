@@ -1,5 +1,6 @@
 package com.template.states;
 
+import com.template.contracts.IOUContract;
 import com.template.contracts.TemplateContract;
 import net.corda.core.contracts.BelongsToContract;
 import net.corda.core.contracts.ContractState;
@@ -10,7 +11,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Arrays;
 import java.util.List;
 
-@BelongsToContract(TemplateContract.class)
+@BelongsToContract(IOUContract.class)
 public class IOUState implements ContractState {
 
     private final int value;
